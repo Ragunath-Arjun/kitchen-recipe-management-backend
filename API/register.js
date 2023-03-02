@@ -8,10 +8,8 @@ const bcrypt=require("bcrypt")
 const register=async (req,res)=>{
 
     try {
-        console.log("Before Connection")
         //Connect Mongodb
         const connection=await mongoclient.connect(URL);
-        console.log("After Connection")
         //select db
         const db=connection.db("kitchen_recipe");
         //select collection

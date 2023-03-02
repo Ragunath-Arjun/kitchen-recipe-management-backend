@@ -19,7 +19,6 @@ app.use(express.json());
 app.use(cors({
     origin:"*"}))
 
-app.get("/test",(req,res)=>res.json({message:"Tested"}));
 app.post("/register",register)
 
 app.post("/login",login)
